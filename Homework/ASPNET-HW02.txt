@@ -1,0 +1,72 @@
+## ASP.NET HW02
+
+
+
+1. What is the difference between Visual Studio and Visual Studio Code?
+
+*VS Code is a light-weight alternative to Visual Studio - less resource-hungry*
+
+2. What is LocalDB?
+
+*a zero-configuration version of SQL Server, free to use*
+
+3. What do these commands do?
+dotnet new globaljson --sdk-version 3.1.101 --output FirstProject
+dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1
+
+*Creates a folder named 'FirstProject' and adds a file names global.json ; creates a .NET Core project*
+
+4. What command do you use to build an ASP.NET project from the command line? What command
+do you use to run the project?
+
+```
+dotnet new name --output Folder --framework netcoreapp5 //creates new application
+f5 //run application
+```
+
+5. What is the purpose of an endpoint?
+
+*an action to respond to incoming data*
+
+6. What is a controller?
+
+*defines actions - types of endpoints - controller is a built in base class*
+
+7. Where are actions defined?
+
+*in a controller*
+
+8. What is the purpose of the routing system?
+
+*selects the endpoint that will handle an http request*
+
+9. Assume that your ASP.NET application runs in a browser with a URL like http://localhost:5000.
+List the three default routes configured by the ASP.NET Core routing system.
+
+* / ; /Home ; /Home/Index*
+
+10. What does the ViewResult object instruct ASP.NET Core to do?
+
+*render a view*
+
+11. How does ASP.NET Core know what View is to be called from an action method?
+
+*You specify the name of the view you want to use in the view method - called by viewresult*
+
+12. What is the job of an action method?
+
+*The action method handles HTTP requests*
+
+13. What is a view model?
+
+*data provided to views by action methods*
+
+Action Methods:
+- When you invoke an action method - it returns a view of the specified method:
+
+```
+Public IActionResult Index()
+{
+	return View() //Returns to Index.cshtml
+}
+```

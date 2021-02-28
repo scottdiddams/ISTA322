@@ -1,0 +1,41 @@
+## ASP.NET HW01
+
+1. (not in book) What is HTML? See https://www.w3.org/TR/html40/.
+
+*Hypertext Markup Language - the publishing language of the World Wide Web
+
+2. (not in book) What is HTTP? See https://www.w3.org/Protocols/rfc2616/rfc2616.html.
+
+*Hypertext transfer Protocol - an application-level protocol for distributed, collaborative, hypermedia systems since 1990*
+
+3. What is middleware? See pages 255-256 in the book.
+
+*software that provides common services and capabilities to applications outside of whats offered by the operating system.*
+
+4. What is URL routing? See pages 282-283 in the book.
+
+*The process of intercepting an incoming web request and automatically redirecting it to another url*
+
+5. What is dependency injection? See pages 255-257 in the book.
+
+*where one object supplies the dependencies of another*
+
+6. What is model binding? See pages 703-706 in the book.
+
+*a bridge between an HTTP request and a C# action method*
+
+7. What are Razor pages?
+
+*a simplified web application programming model using C# and HTML*
+
+8. What is Entiity Framework Core?
+
+*lightweight, open-source object-relational mapper, which enables .NET developers to work with a database using .NET objects*
+
+9. What is ASP.NET Core Identity?
+
+*an API that supports user interface login functionality - manages users/passwords etc...*
+
+10. What is the ASP.NET Core platform?
+
+*A cross-platform, high-performance, open-sourse framework for building modern, cloud-enabled, internet-connected apps.*

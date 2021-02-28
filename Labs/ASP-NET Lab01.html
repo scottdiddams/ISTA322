@@ -1,0 +1,199 @@
+<!DOCTYPE html />
+<html>
+	<head>
+	<style>
+
+	body
+	{
+		background-image: url('http://www.baltana.com/files/wallpapers-5/Wall-Background-HD-Wallpapers-16562.jpg');
+		
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-attachment: fixed;
+		opacaity: 0.3;
+	}
+	div.ex1
+	{
+	width: 500px;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: gray;
+	opacity: 0.8;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	table, th, td{
+	border:2px solid black;
+	border-collapse: collapse;
+	}
+
+	h1{ text-align:center;}
+
+	</style>
+	<script>
+	//JavaScript
+	<meta name="Author" content="Scott Diddams">
+	</script>
+
+	</head>
+		<body >
+			<div class="ex1">
+		
+			<a id='top' /><!--this is a target anchor-->
+			<h1>ISTA 322 Lab01</h1>
+
+			<center><h2>Intro to HTML</h2>
+
+			<h5>This webpage uses Cascading Style Sheets and Hypertext Markup Language</h5>
+			
+			<br>
+			<br>
+			<br>
+			<h4>Basic Table with CSS border-collapse</h4>
+			<table>
+				<tr>
+					<th>Column 1</th>
+					<th>Column 2</th>
+					<th>Column 3</th>
+				</tr>
+				<tr>
+					<td>Table data 1</td>
+					<td>Table data 2</td>
+					<td>Table data 3</td>
+				</tr>
+				<tr>				
+					<td>Table data 1</td>
+					<td>Table data 2</td>
+					<td>Table data 3</td>
+				</tr>
+				<tr>
+					<td>Table data 1</td>
+					<td>Table data 2</td>
+					<td>Table data 3</td>
+				</tr>
+			</table></center>
+			<br>
+			<br>
+			<br>
+			<center><h4>Generic elements - div & span</h4></center>
+			<br>
+			
+			<div>This is a generic block element - div.</div>
+			<div>This is a generic block element - div.</div>
+			<div>This is a generic block element - div.</div>
+			<br>
+			<div>
+			<Span style='font-variant: small-caps;'>This is a generic inline element - span with font-variant small-caps.</span>
+			<Span style='background-color: #aaffaa;'>This is a generic inline element - span with background-color: #aaffaa.</span>
+			<Span style='font-family: sans-serif;'>This is a generic inline element - span with font-family: san-serif.</span>
+			</div>
+			
+			<br>
+			<br>
+			
+			<center><h4>Form tags - input types of radio and button</h4></center>
+			<br>
+			
+			<form method ="GET">
+				How do you get to work?<br>
+				<input type="radio" id="vehicle1" name="vehicle">
+					<label for="vehicle1"> I ride a bike</label><br>
+				<input type="radio" id="vehicle2" name="vehicle">
+					<label for="vehicle2"> I drive a car</label><br>
+				<input type="radio" id="vehicle3" name="vehicle">
+					<label for="vehicle3"> I take a ferry</label><br>
+				<input type="radio" id="vehicle4" name="vehicle" >
+					<label for="vehicle4"> I take a train</label><br>
+				<input type="radio" id="vehicle5" name="vehicle" >
+					<label for="vehicle5"> Other</label><br>
+				<center><input type="button" onclick="alert('Thank you!')" value="Submit"></center>
+			</form>
+			<br>
+			<br>
+			<center><h4>The min and max attributes specify the minimum and maximum values for an input element.</h4></center>
+
+			<form method ="GET">
+				<label for="datemax">Enter a date before 1980-01-01:</label>
+					<input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+				<label for="datemin">Enter a date after 2000-01-01:</label>
+					<input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+				<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+					<center><input type="submit" value="Submit"></center>
+			</form>
+			<br>
+			<br><center><h4>Input type range & number using output</h4></center>
+			
+			<form method="GET"
+				oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+				0
+				<input type="range"  id="a" name="a" value="50">
+				100 +
+				<input type="number" id="b" name="b" value="50"><br>
+				<center>
+				=
+				<output name="x" for="a b"></output>
+				<br><br>
+				<input type="submit"></center>
+			</form>
+			
+			<br>
+			<br>
+			<center><h3>Pizza Toppings</h3></center>
+			
+			Pepperoni: <input type="checkbox" type="checkbox" name="pizza" value="pepperoni" />
+			Bell Pepper:<input type="checkbox" type="checkbox" name="pizza" value="BellPepper" />
+			Bacon:<input type="checkbox" type="checkbox" name="pizza" value="Bacon" />
+			Mushroom:<input type="checkbox" type="checkbox" name="pizza" value="Mushroom" />
+			Pineapple:<input type="checkbox" type="checkbox" name="pizza" value="Pineapple" />
+			Extra Cheese:<input type="checkbox" type="checkbox" name="pizza" value="ExtraCheese" />
+			
+			<br />
+			<br>
+			<br>
+			<center><h3>Select & option</h3></center>
+			<center><select name ="sob" id="sob">
+				<option value="">Where were you born?</option>
+				<option value="CO">Colorado</option>
+				<option value="WA">Washington State</option>
+				<option value="NY">New York</option>
+				<option value="PA">Pennsylvania</option>
+				<input type="submit"></center>
+			</select>
+			<br />
+			<center><h3>Select & option with size 3 and multiple</h3></center><br>
+			
+			<center>Where have you lived?<br>
+			<select name ="sob" id="sob" size=3 multiple="multiple">
+				<option value="GA">Georgia</option>
+				<option value="CO">Colorado</option>
+				<option value="WA">Washington State</option>
+				<option value="NY">New York</option>
+				<option value="PA">Pennsylvania</option>
+				<br>
+				<input type="submit"></center>
+			</select>
+			<br />
+			<br>
+			<br><center><h4>Textarea and input type reset</h4>
+			<form>
+			<textarea name="ta" id="ta" value="Type Something here" rows='5' cols='50'>
+			</textarea>
+			<br>
+			<input type="reset" value="Clear Form" />
+			</form></center>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br> <center><a href="http://www.google.com" target="_blank">Google</a>
+			<br>
+			<a id='bottom'/>
+			<a href='#top'>Go to Top</a> <!-- this is a source anchor-->
+			</center>
+		</div>
+		</body>
+
+</html>
