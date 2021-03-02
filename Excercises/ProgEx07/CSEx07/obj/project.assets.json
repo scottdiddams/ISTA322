@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\CSEx07\\CSEx07\\CSEx07.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\ProgEx07\\CSEx07\\CSEx07.csproj",
       "projectName": "CSEx07",
-      "projectPath": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\CSEx07\\CSEx07\\CSEx07.csproj",
+      "projectPath": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\ProgEx07\\CSEx07\\CSEx07.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\CSEx07\\CSEx07\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\MSSA2021\\ISTA322\\Excercises\\ProgEx07\\CSEx07\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,61 @@
+## ASPHW04
+
+1. What are the .NET SDK command line tools used for? Is their use required? Why or why not?
+
+*The ASP.NET Core SDK provides command line tools which can be used to access features of the SDK that cannot be accessed ion the VS IDE*
+
+2. What kind of applications do the following templates create? Run these commands and read the
+documentation. A brief summary of each template is sufficient.
+```
+dotnet new console --help	//Creates a command-line application project that can run on .NET Core Windows/Linux/MacOS
+
+dotnet new mvc --help		//Creates a project template for an ASP.NET Core application with Core MVC Views & Controllers - also used for RESTful HTTP Services
+
+dotnet new web --help		//An empty project template for creating an ASP.NET Core application. This template does not have any content in it.
+
+```
+
+3. What, specifically, do the following commands do?
+dotnet new globaljson --sdk-version 3.1.101 --output MySolution/MyProject
+```
+dotnet new web --no-https --output MySolution/MyProject --framework netcoreapp3.1
+	//Creates a new webapp template using the .NET Core 3.1, saving it in the MyProject folder
+dotnet new sln -o MySolution
+	//Sets the output location to place the new solution as "MySolution" 
+dotnet sln MySolution add MySolution/MyProject
+	//Selects the MySolution sln file and adds the MyProject project file to it
+```
+4. What is the purpose of the global.json file?
+
+*Specifies the version of the .NET Core that will be used*
+
+5. What does the method app.UseStaticFiles() do?
+
+*Adds support for responding to HTTP requests with static content in the wwwroot folder*
+
+6. What do the following two commands do?
+
+```
+dotnet build 	//Builds the project - just as VS would
+dotnet run		//Runs the project - equivalent of F5 in VS
+```
+7. (not in book) You cah manage pacakges using the NuGet package manager and the command line tool
+dotnet add package. What are packages and what are they used for.
+
+*Packages that contain compiled code and other content needed for projects that consume them - ideal for sharing code*
+
+8. What are tool packages and what are they used for?
+
+*Tool packages install commands that can be used in the command line to perform operations on .NET Core projects*
+
+9. What are tool packages and what are they used for?
+
+
+
+10. What are client side packages and what are they used for?
+
+*Client-Side packages contain content that is delivered to the client, such as images, CSS stylesheets, JS files, and static HTML*
+
+11. List two ways that a developer can debug code.
+
+*VS/VS Code Debug run debug on a complete program or use breakpoints to step through the code. Or use Console.WriteLine statements to visualize what's happening*

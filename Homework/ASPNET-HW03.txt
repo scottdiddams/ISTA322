@@ -1,0 +1,56 @@
+## ASP.NET HW03
+
+1. What is the most important part of an ASP.NET Core 3 application?
+
+*The Data Model - a representation of real-world objects, processes, and rules that define the subject, known as the domain, of the application*
+
+2. What is the domain model?
+
+*The data model for ASP.NET Core projects - containing C# objects making up the application and the methods that manipulate them*
+
+3. Where are the model classes in an ASP.NET Core 3 application placed?
+
+*A defined folder named "Models"*
+
+4. How many action methods can a controller class define?
+
+*"Multiple"*
+
+5. What is a tag helper?
+
+*An instruction for Razor that will be performed when the view is rendered.*
+
+6. What does the asp-action attribute do?
+
+*an instruction to add an href attribute to the a element that contains a URL for an action method*
+
+7. What is the difference between HTTP GET and HTTP POST? This is an important question, and you
+should understand the difference.
+
+*A get request is what a browser issues normally each time someone clicks a link - handled by displaying information. A POST request is handled by a method that recieves submitted data and decides what to do with it*
+
+8. What is model binding?
+
+*A feature that allows incoming data to be parsed and the key/value pairs in the HTTP request are used to populate properties of domain model types*
+
+9. Why should we validate user data? How do we validate user data?
+
+*Without validation, users could enter nonsense data or submit an empty form - data validation rules are defined by applying attributes to model classes*
+
+10. What, specifically, is the ModelState.IsValid property?
+
+*A bool that checks to see if there are any validation errors*
+
+11. What does the asp-validation-summary do?
+
+*applied to a <div> element and displays a list of validation errors when the view is rendered*
+
+12. Static content consists of content such as images, script files, style files, etc. In an ASP.NET Core
+application, what is the name of the folder that cotains static content?
+
+*"www-root"*
+
+13. What is Bootstrap? Who developed Bootstrap? Is Bootstrap a proprietary package? If not, what is
+it?
+
+*A CSS framework originally devloped by twitter, now an open-source project in web development*
