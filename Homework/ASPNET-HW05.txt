@@ -1,0 +1,58 @@
+## ASP.NET HW05
+
+1. What is the purpose of the null conditional operator? Does it apply to value types or reference types?
+Why or why not?
+
+*The null conditional operator (?) allows for null values to be detected "more elegantly" - ensures you dont get a NullReferenceException when navigating through object properties. applies to value and reference types.*
+
+2. What is the null coalescing operator? What does it do?
+
+*The null coalescing operator (??) sets a fallback to prevent null values from being used in the application*
+
+3. How is the null conditional operator different from a nullable type? What is the purpose of nullable
+types?
+
+*nullable types, like "string? product = null" circumvent what would be a compiler error - the string? type is nullable, while string type is not - different from the null conditional operator, which sets a an object value to null*
+
+4. When you create an automatic property and initialize the property with a value, can the value be
+changed later? Can another value be assigned to the property? Can the value be changed in the
+constructor?
+
+*yes, automatic properties are a syntactic pleasantry and do not alter the way the program functions*
+
+5. What is an object initializer and what is it for? What is an collection initializer and what is it for?
+
+*allows the initial value to be set without having to use the constructor*
+
+6. What does the is keyword do?
+
+*the is keyword is used to perform a type test - if a value is of the specified type, the program assigns the value to a new variable*
+
+7. How are extension methods defined?
+
+*Extension methods are a convenient way of adding methods to classes that you cannot modify directly - define an extension method in a new class.cs file and save it in the models folder - apply the extension method in the appropriate controllers action method*
+
+8. What is implicit typing or type inference? How do you implement it?
+
+*using the var keyword - allows you to define a local variable without explicitly specifying the variable type*
+
+9. What is a default implementation of an interface? What is the purpose of a default implementation
+of an interface?
+
+*If I want to add a new feature to the interface, I must locate and update all the classes that implement it, which can be difficult, especially if an interface is used by other development teams in their projects. This is where the default implementation feature can be used, allowing new features to be added to an interface*
+
+10. What are asynchronous methods? Why should we use them? How are they used?
+
+*perform work in the background and notify you when they are complete - good for preventing information bottlenecks by working in parallel*
+
+11. When you use the await keyword, do you have to use the async keyword? Why or why not?
+
+*yes - it's like prioritizing code segments, you have to let hte compiler know what youre doping*
+
+12. (not in book) What is the yield keyword used for? How do you use it?
+
+*yield indicates that the method/operator/get accessor in which it appears is an iterator*
+
+13. What is the effect of using the nameof() expression?
+
+*gets the name of a class or member*

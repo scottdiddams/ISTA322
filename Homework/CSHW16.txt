@@ -1,0 +1,201 @@
+## C#HW16
+
+
+1. Give Five examples (using valid C# code) of the Five bitwise operators listed in the text.
+
+```
+ ~	//The Not operator: ~ performs a bitwise compliment (all 1's in a binary value become 0 and vice versa
+ 
+ <<[x]	//The left shift operator deletes the first [x] binary bits from a value and concats [x] new zeroes on the end - 110011<<2 = 001100
+
+ |	//The Or operator returns a 1 in each position in which either of the operands has a 1 For example, the 8-bit expression 204 | 24 has the value 220 (204 is 0b0_11001100, 24 is 0b0_00011000, and 220 is 0b0_11011100).
+
+ &	//The And operator - AND is similar to the bitwise OR operator, but it returns a value containing a 1 in each position where both of the operands have a 1. So, the 8-bit expression 204 & 24 is 8 (204 is 0b0_11001100, 24 is 0b0_00011000, and 8 is 0b0_00001000).
+
+ ^	//The XOR operator returning a 1 in each bit where there is a 1 in one operand or the other but not both. (Two 1s yield a 0; this is the “exclusive” part of the operator.) So the 8-bit expression 204 ^ 24 is 212 (0b0_11001100 ^ 0b0_00011000 is 0b0_11010100).
+
+2. Does C# implement the right-shift (>>) operator? If so, give an example of its operation using valid C# code.
+```
+001100>>2 //= 000011
+```
+3. Explain in detail this code: bits & (1 << index);.
+```
+left shifts 00000001 by "index" and runs the & operator based on the bits variable - sets the bits variable to the solution
+```
+4. Explain in detail this code: bits |= (1 << index);.
+```
+left shifts 00000001 by "index" and runs the |= operator based on the bits variable
+```
+5. Explain in detail this code: bits &= (1 << index);.
+```
+does the same as (3) but returns the solution
+```
+6. How does C# interpret this? bool peek = bits[n];
+
+*where true = 1 and false = 0, returns the bool value of the binary value at index n*
+
+7. How does C# interpret this? bits[n] = true;
+
+*sets the binary value at index n to 1*
+
+8. How does C# interpret this? bits[n] ^= true;
+
+*inverts the value of the bit at index n*
+
+9. Assume that users were assigned read, write, and execute permissions according to this scheme: read = 1, write = 2, execute = 4. How would you interpret the following user permissions:
+
+(a) permission = 0 - none
+(b) permission = 1 - read
+(c) permission = 2 - write 
+(d) permission = 3 - none 
+(e) permission = 4 - execute 
+(f) permission = 5 - none 
+(g) permission = 6 - none 
+(h) permission = 7 - none 
+
+10. Answer the previous question by converting the decimal permissions into binary permissions. What
+does this tell you about using this shceme of permissions?
+```
+0000 - none
+0001 - read
+0010 - write
+0011 - execute
+can be manuiplated with indexers
+```
+_________________________________		
+Hex - base 16
+ 0 - 0000 - 0
+ 1 - 0001 - 1
+ 2 - 0010 - 2
+ 3 - 0011 - 3
+ 4 - 0100 - 4
+ 5 - 0101 - 5
+ 6 - 0110 - 6
+ 7 - 0111 - 7
+ 8 - 1000 - 8
+ 9 - 1001 - 9
+ 10 - 1010 - A
+ 11 - 1011 - B
+ 12 - 1100 - C
+ 13 - 1101 - D
+ 14 - 1110 - E 
+ 15 - 1111 - F 
+ _________________________________
+ 0b0 11110000_01011010_11001100_00001111
+ is the same as
+ 0x0_F0_5A_CC_0F
+ _________________________________
+ 0x0_DEAD_BEEF = 0b0_1101111010101101_1011111011101111
+ _________________________________
+(bits & (1 << 5)) != 0
+
+where bits = 10101010
+1
+00000001
+1 << 5
+00100000
+
+10101010 & 00100000
+
+10101010
+00100000
+--------
+00100000
+ != 0 - true
+
+_________________________________
+10101010 &= ~(1 << 5)
+
+1 = 00000001
+1 << 5 = 00100000
+
+~00100000 = 11011111
+
+10101010 & 11011111 (both have 1 in the index)
+
+10101010
+11011111
+---------
+10001010
+_________________________________
+
+00000111 |= (1<<5)
+
+1<<5 = 00100000
+
+00000111 | 00100000 (either have 1 in the index)
+
+00000111
+00100000
+--------
+00100111
+
+_________________________________
+
+35 convert to binary
+
+35%2 = 1*
+35/2 = 17
+
+17%2 = 1*
+17/2 = 8
+
+8%2 = 0*
+8/2 = 4
+
+4%2 = 0*
+4/2 = 2
+
+2%2 = 0*
+2/2 = 1
+
+1%2 = 1*
+1/2 = 0
+
+35 = 110001
+
+_________________________________
+
+
+12 & 62
+
+62%2 = 0
+62/2 = 31
+
+31&2 = 1
+31/2 = 15
+
+15%2 = 1
+15/2 = 7
+
+1
+3
+
+1
+1
+
+1
+0
+
+00
+
+62 = 111110
+
+12 = 001100
+
+12 & 62
+
+001100 &
+111110
+------
+001100 = 12
+
+001100 |
+111110
+------
+111110 = 62
+
+001100 ^
+111110
+------
+110010 = 50

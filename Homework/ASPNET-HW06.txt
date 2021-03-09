@@ -1,0 +1,56 @@
+## ASP.NET HW06
+
+1. What is unit testing as defined by the book?
+
+*a form of testing in which individual components are isolated from the rest of the application so their behavior can be thoroughly validated*
+
+2. What is the convention for creating unit tests in ASP.NET Core applications?
+
+*create a separate VS project to hold the unit tests, each of which is defined as a method in a C# Class*
+
+3. Name three unit test project tools used for ASP.NET Core applications.
+
+*MS Test; NUnit; XUnit*
+
+4. What is the convention for naming unit tests in ASP.NET Core applications?
+
+*<applicationName>.Tests*
+
+5. What is the convention for naming the test classes in AP.NET Core? What is the convention for
+naming the methods in the test classes?
+
+*The name of the test method describes what the test does - the name of the class describes whats being tested*
+
+6. What is the purpose of the Fact attribute in Xunit? (not in book) What is the purpose of the Theory
+attribute in Xunit?
+
+*[fast] is Applied to each method to indicate that it is a test - [theory] is applied to denote a parameterized test that is true for a subset of data*
+
+7. Describe the different elements of the AAA testing pattern.
+
+*arrange/act/assert - Arrange: setup cnditions for the test; act: perform the test; Assert: verify the result meets desired expectations*
+
+8. Describe the use of the methods in the Assert class. Describe the purpose, parameters, and return
+value of the Assert.Equals() method.
+```
+Assert.Equal(expected, result) //asserts the result is equal to the expected outcome
+Assert.NotEqual(expected, result) //asserts the result is not equal to the expected outcome
+Assert.True(result) //Asserts the result is true
+Assert.False(result)
+Assert.Is[Not]Type(expected, result) //Asserts the result is [not] of a specific type
+Assert.Is[Not]Null(result) //Asserts the result is [not] Null
+[Not]InRange(result, low, high) //asserts result [does not] falls between low and high
+Throws(exception, expression)	//Asserts that the specified expression throws a specific exception type
+```
+
+9. What is the key to isolating a component for testing?
+
+*use C# interfaces to change the data source used by the controller*
+
+10. What is a mocking package? What does it do?
+
+*creates fake/mock objects for tests - "Moq" is an example of a Mocking package*
+
+11. (not in book) What is the difference between the Setup() and the SetupGet() methods of Moq?
+
+*Setup is used for mocking a property, SetupGet is specifically for mocking the getter of a property*

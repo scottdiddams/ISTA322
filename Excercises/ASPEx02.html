@@ -1,0 +1,114 @@
+<!DOCTYPE html />
+<html>
+	<head>
+	<style>
+	body{
+		background-image: url('http://wallpaperswide.com/download/new_york_city_black_and_white-wallpaper-2880x1620.jpg');
+		
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-attachment: fixed;
+		opacaity: 0.3;
+	}
+	div.ex1{
+	width: 50%;
+	Height: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: gray;
+	opacity: 0.8;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	div.ex2{
+	width: 50%;
+	Height: 50px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: gray;
+	opacity: 0.8;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	table, th, td{
+	background-color: gray;
+	border:2px gray;
+	border-collapse: collapse;
+	padding:3;
+	width: 60%;
+	align: center;
+	}
+
+	h1{
+	text-align:center;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: black;
+	}
+
+	</style>
+	<script>
+	//JavaScript
+	<meta name="Author" content="Scott Diddams">
+	</script>
+
+	</head>
+		<body >
+			<div class="ex1">
+		
+			<a id='top' /><!--this is a target anchor-->
+			<h1>ISTA 322 ASPEx02</h1>
+
+			<center><h2>Project Input Form</h2>
+			<Center><h3>With CSS</h3>
+			
+			<br>
+			<br>
+			<br>
+			<form name="UserEntry" method="get">
+			<table>
+			<tr><th colspan="2"><center><h4>Device Registration</h4></center></th></tr>
+
+			<tr>
+				<td><label for="deviceID">Device Name</label></td>
+				<td><input type="text" id="deviceID" name="deviceID"></td>
+			</tr>	
+			<tr>	
+				<td><label for="description">Description</label></td>
+				<td><input type="text" id="description" name="description"></td>
+			</tr>
+			<tr>
+				<td><label for="location">Location</label></td>
+				<td><input type="text" id="location" name="location"></td>
+			</tr>	
+			<tr>
+				<td>Select Device Type</td>
+				<td><input list="deviceType">
+					<datalist id="deviceType">
+					<option value="Electricity Monitor">
+					<option value="Water Use Monitor">
+					<option value="Air Quality Monitor">
+					</datalist>
+				</td>	
+			</tr>
+			<tr>
+				<td colspan="2"><center><input type="submit" value="Submit"></center></td>
+			</tr>
+			</table>
+			</form>
+			<center><h5>This form will allow the user to submit the requisite data to the "Devices" table of the CitySentinel database</h5></center>
+			
+			
+		</div>
+		<div class="ex2">
+			<a id='bottom'/>
+			<center>
+			<a href='#top'>Go to Top</a> <!-- this is a source anchor-->
+			</center>		
+		</div>
+		</body>
+</html>
